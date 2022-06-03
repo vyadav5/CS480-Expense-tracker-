@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Expense and Saving Tracker</display-name>
+
+	<servlet>
+		<display-name>InitializeServlet</display-name>
+		<servlet-name>InitializeServlet</servlet-name>
+		<servlet-class>web.servlet.InitializeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitializeServlet</servlet-name>
+		<url-pattern>/InitializeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<display-name>UserServletRegister</display-name>
+		<servlet-name>UserServletRegister</servlet-name>
+		<servlet-class>web.servlet.UserServletRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServletRegister</servlet-name>
+		<url-pattern>/UserServletRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UserServletLogin</display-name>
+		<servlet-name>UserServletLogin</servlet-name>
+		<servlet-class>web.servlet.UserServletLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServletLogin</servlet-name>
+		<url-pattern>/UserServletLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ExpenseServlet</display-name>
+		<servlet-name>ExpenseServlet</servlet-name>
+		<servlet-class>web.servlet.ExpenseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExpenseServlet</servlet-name>
+		<url-pattern>/Expense/add</url-pattern>
+		<url-pattern>/Expense/update</url-pattern>
+		<url-pattern>/Expense/delete</url-pattern>
+		<url-pattern>/Expense/findAll</url-pattern>
+		<url-pattern>/Expense/findByID</url-pattern>
+		<url-pattern>/Expense/custom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>SavingServlet</display-name>
+		<servlet-name>SavingServlet</servlet-name>
+		<servlet-class>web.servlet.SavingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SavingServlet</servlet-name>
+		<url-pattern>/Saving/add</url-pattern>
+		<url-pattern>/Saving/update</url-pattern>
+		<url-pattern>/Saving/delete</url-pattern>
+		<url-pattern>/Saving/findAll</url-pattern>
+		<url-pattern>/Saving/findByID</url-pattern>
+		<url-pattern>/Saving/custom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>CategoryServlet</display-name>
+		<servlet-name>CategoryServlet</servlet-name>
+		<servlet-class>web.servlet.CategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/Category/add</url-pattern>
+		<url-pattern>/Category/update</url-pattern>
+		<url-pattern>/Category/delete</url-pattern>
+		<url-pattern>/Category/list</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>/jsps/main.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

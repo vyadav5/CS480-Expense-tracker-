@@ -1,0 +1,39 @@
+input[type="submit"], button {
+	background-color: #cc2353;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+input[type="submit"]:hover, button:hover {
+	background-color: black;
+	color: white;
+}
+
+/* input[type="text"], input[type="number"], input[type="date"], input[type="month"] */
+input {
+	border: 2px solid #cc2353;
+	border-radius: 4px;
+	padding: 8px 8px;
+	margin: 4px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+th {
+	background-color: #04436D;
+	color: white;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+
+td {
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
